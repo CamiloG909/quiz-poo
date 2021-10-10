@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+$custom-black: #1B1B1B
+$borders: #686868
+$soft-gray: #4A4A4A
+$gray: #3B3B3B
+$dark-gray: #2B2B2B
+$soft-green: #75f0a0
+$green: #1CCC5B
+$dark-green: #117F38
+$soft-blue: #729cff
+$blue: #2D6BFF
+$dark-blue: #1F4AB2
+$soft-red: #ff6a6a
+$red: #e81111
+$dark-red: #AB0000
+$strong-shadow: 0 9px 32px -1px rgba(0, 0, 0, 0.5)
+
+*
+	margin: 0
+	padding: 0
+	font-family: 'Montserrat', sans-serif
+	box-sizing: border-box
+
+::selection
+	color: white
+	background-color: #ffffff51
+
+html
+	font-size: 10px
+	color: white
+
+body
+	text-align: center
+	background-color: $custom-black
+
+.logo-header
+	margin: 20px 0
+	inline-size: 50%
+	max-inline-size: 350px
+	user-select: none
+
+.container-quiz
+	margin: 0 auto
+	inline-size: 95%
+	max-inline-size: 500px
+	background-color: $gray
+	border-radius: 5px
+	box-shadow: $strong-shadow
+	overflow: hidden
+	&__title
+		padding: 20px 0
+		font-size: 2.8rem
+		background-color: $soft-gray
+	&__question
+		padding: 20px
+		font-size: 1.5rem
+	&__reload
+		line-height: 4rem
+		font-weight: bold
+		color: white
+		transition: all 0.3s ease
+		&:hover
+			color: $green
+	&__choices
+		margin: 0 auto
+		inline-size: 90%
+	&__footer
+		padding: 15px
+		font-size: 1.6rem
+		font-weight: bold
+		background-color: $green
+
+.quiz-btn
+	margin: 10px auto
+	padding: 10px
+	inline-size: 100%
+	max-inline-size: 300px
+	font-size: 1.5rem
+	color: white
+	border: 1px solid $soft-blue
+	border-radius: 5px
+	background-color: $blue
+	transition: all 0.3s ease
+	user-select: none
+	cursor: pointer
+	&:hover
+		border-color: $blue
+		background-color: $dark-blue
+	&:active
+		border-color: $dark-blue
+	&:last-child
+		margin-block-end: 30px
